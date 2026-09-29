@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gihan Wimalaweera | Developer Portfolio</title>
+<meta name="description" content="Portfolio of Gihan Wimalaweera, a software engineering student in Colombo, Sri Lanka, building web and mobile apps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#home">Gihan<span>.</span>W</a>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="themeBtn" aria-label="Switch colour theme" title="Switch theme">◐</button>
+      <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Gihan Wimalaweera<small>Software engineering student in Colombo, Sri Lanka</small></h1>
+        <p>I build websites and mobile apps, and I enjoy turning a rough idea into something people can tap, scroll and use.</p>
+        <div class="btns">
+          <a class="btn primary" href="#projects">See my work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="code" aria-label="A short code snippet describing Gihan">
+        <div class="code-top" aria-hidden="true"><i></i><i></i><i></i></div>
+        <pre id="typed" aria-hidden="true"></pre>
+        <span class="sr" hidden></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <div class="about">
+        <div>
+          <p>I'm Gihan, a Software Engineering student based in Colombo. I'm working toward becoming a professional web designer and developer, and I spend most of my free time building small projects to sharpen my skills.</p>
+          <p>I like programming because every problem has a clean solution waiting to be found. Web development lets me combine logic with design, and mobile app development lets me put that work in someone's pocket.</p>
+          <p>I'm open to internships, junior roles and freelance projects.</p>
+        </div>
+        <ul class="facts">
+          <li><b>Location</b><span>Colombo, Sri Lanka</span></li>
+          <li><b>Studying</b><span>Software Engineering degree</span></li>
+          <li><b>Focus</b><span>Programming, web and mobile apps</span></li>
+          <li><b>Goal</b><span>Professional web designer and developer</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="background:var(--surface);border-block:1px solid var(--line)">
+    <div class="wrap">
+      <h2>What I work with</h2>
+      <p class="lead">Three areas I'm actively learning and practising.</p>
+      <div class="skills">
+        <article class="skill">
+          <h3>Programming</h3>
+          <p>Problem solving, data structures and clean, readable code.</p>
+          <ul class="tags"><li>JavaScript</li><li>Python</li><li>Java</li><li>Git</li><li>Algorithms</li></ul>
+        </article>
+        <article class="skill">
+          <h3>Web development</h3>
+          <p>Responsive, accessible sites built from the ground up.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive design</li><li>UI design</li></ul>
+        </article>
+        <article class="skill">
+          <h3>Mobile app development</h3>
+          <p>Cross-platform apps with simple, touch-friendly interfaces.</p>
+          <ul class="tags"><li>Flutter</li><li>React Native</li><li>Android</li><li>App UX</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="lead">A selection of things I've built or am building. Filter by area.</p>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button aria-pressed="true" data-f="all">All</button>
+        <button aria-pressed="false" data-f="web">Web</button>
+        <button aria-pressed="false" data-f="mobile">Mobile</button>
+        <button aria-pressed="false" data-f="code">Programming</button>
+      </div>
+      <div class="grid" id="grid">
+        <article class="card" data-c="web"><span class="type">Web</span><h3>Lanka Eats</h3><p>A restaurant discovery site with search, cuisine filters and a booking form.</p><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><a href="#contact">Ask about this project</a></article>
+        <article class="card" data-c="mobile"><span class="type">Mobile</span><h3>TeaTime</h3><p>An app that tracks brewing timers and favourite Ceylon tea blends.</p><ul class="tags"><li>Flutter</li><li>Dart</li></ul><a href="#contact">Ask about this project</a></article>
+        <article class="card" data-c="code"><span class="type">Programming</span><h3>Budget CLI</h3><p>A command-line expense tracker that summarises spending by category.</p><ul class="tags"><li>Python</li><li>CSV</li></ul><a href="#contact">Ask about this project</a></article>
+        <article class="card" data-c="web"><span class="type">Web</span><h3>Bus Board</h3><p>A clean, mobile-first timetable page for Colombo bus routes.</p><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><a href="#contact">Ask about this project</a></article>
+        <article class="card" data-c="mobile"><span class="type">Mobile</span><h3>StudyPal</h3><p>A focus timer for students with daily goals and a weekly summary.</p><ul class="tags"><li>React Native</li></ul><a href="#contact">Ask about this project</a></article>
+        <article class="card" data-c="code"><span class="type">Programming</span><h3>Sudoku Solver</h3><p>A backtracking solver that completes any valid puzzle in milliseconds.</p><ul class="tags"><li>Java</li><li>Algorithms</li></ul><a href="#contact">Ask about this project</a></article>
+      </div>
+      <p class="note">These are sample entries. Replace the titles, descriptions and links with your real projects.</p>
+    </div>
+  </section>
+
+  <section id="contact" style="background:var(--surface);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <h2>Let's talk</h2>
+      <p class="lead">Have a project, an internship or a question? Send a message.</p>
+      <div class="contact">
+        <ul class="info">
+          <li><b>Email</b><a href="mailto:gihan.wimalaweera@example.com">gihan.wimalaweera@example.com</a></li>
+          <li><b>Phone</b><a href="tel:+94771234567">+94 77 123 4567</a></li>
+          <li><b>Location</b>Colombo, Sri Lanka</li>
+        </ul>
+        <form id="form" novalidate>
+          <label>Your name<input id="name" autocomplete="name" required><span class="err" id="e-name"></span></label>
+          <label>Your email<input id="email" type="email" autocomplete="email" required><span class="err" id="e-email"></span></label>
+          <label>Message<textarea id="msg" required></textarea><span class="err" id="e-msg"></span></label>
+          <button class="btn primary" type="submit">Send message</button>
+          <p id="status" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© <span id="yr"></span> Gihan Wimalaweera</span><a href="#home">Back to top</a></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
